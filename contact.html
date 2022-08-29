@@ -66,18 +66,18 @@ function test_input($data) {
 ?>
 
 <h2>PHP Form Validation Example</h2>
-<p><span class="error">* required field</span></p>
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-  Name: <input type="text" name="name" value="<?php echo $name;?>">
-  <span class="error">* <?php echo $nameErr;?></span>
+<p><span class="error"></span></p>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"  
+  Name: <input type="text" name="name">
+  <span class="error"></span>
   <br><br>
-  E-mail: <input type="text" name="email" value="<?php echo $email;?>">
-  <span class="error">* <?php echo $emailErr;?></span>
+  E-mail: <input type="text" name="email" >
+  <span class="error"></span>
   <br><br>
-  Website: <input type="text" name="website" value="<?php echo $website;?>">
-  <span class="error"><?php echo $websiteErr;?></span>
+  Website: <input type="text" name="website" >
+  <span class="error"></span>
   <br><br>
-  Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
+  Comment: <textarea name="comment" rows="5" cols="40"></textarea>
   <br><br>
   Gender:
   <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female

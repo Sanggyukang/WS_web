@@ -157,6 +157,7 @@ canvas.addEventListener('click', function (evt) {
               if (score == brickRowCount * brickColumnCount) {
                 alert("YOU WIN, CONGRATS!");
                 document.location.reload();
+                
               }
             }
           }
